@@ -64,39 +64,12 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 .s-tag{font-size:9px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:.85rem;display:block}
 .s-title{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,6.5vw,3rem);line-height:1.1;letter-spacing:-.025em;margin-bottom:1.5rem}
 
-/* ── PROBLÈME ─────────────────────────────── */
-.s-problem{background:var(--white)}
-.problem-lede{font-size:clamp(15px,4vw,18px);font-weight:700;line-height:1.45;color:var(--black);margin-bottom:1.1rem}
-.problem-body{font-size:14px;color:var(--grey);line-height:1.75;margin-bottom:1.5rem}
-.problem-body strong{color:var(--black)}
-.pillars{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem}
-.pillar{display:flex;align-items:flex-start;gap:12px;padding:1rem;border-radius:12px;background:var(--white);border:1px solid var(--border)}
-.pillar-icon{font-size:19px;flex-shrink:0;margin-top:2px;width:28px;text-align:center}
-.pillar-title{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--black)}
-.pillar-desc{font-size:12px;color:var(--grey);line-height:1.6}
-.problem-quote{background:var(--black);border-radius:14px;padding:1.25rem;display:flex;align-items:flex-start;gap:12px}
-.pq-mark{font-family:'Playfair Display',serif;font-size:2.8rem;line-height:.72;color:var(--gold);flex-shrink:0}
-.pq-text{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:rgba(249,248,245,.82);line-height:1.62}
-.pq-text em{color:var(--gold-bright);font-style:normal}
-
-/* ── CE QUI EST INCLUS ────────────────────── */
-.s-included{background:var(--black);color:var(--white)}
-.incl-cards{display:flex;flex-direction:column;gap:10px;margin-top:1.5rem}
-.incl-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.1rem 1.1rem;display:flex;align-items:flex-start;gap:14px}
-.incl-card-icon{font-size:22px;flex-shrink:0;line-height:1;margin-top:2px}
-.incl-card-title{font-size:14px;font-weight:700;color:rgba(249,248,245,.95);margin-bottom:4px}
-.incl-card-desc{font-size:13px;color:rgba(249,248,245,.52);line-height:1.62}
-.incl-highlight{margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;background:rgba(184,150,46,.1);border:1px solid rgba(184,150,46,.22);font-size:13px;color:rgba(249,248,245,.72);line-height:1.65}
-.incl-highlight strong{color:var(--gold-bright)}
-
-/* ── DÉMO SECTION ─────────────────────────── */
+/* ── DÉMO ─────────────────────────────────── */
 .s-demo{background:var(--surface);padding:3.5rem 1.5rem}
 .s-demo .s-inner{display:flex;flex-direction:column;align-items:center}
 .demo-intro{text-align:center;margin-bottom:2rem;width:100%}
 .demo-sep{width:40px;height:1px;background:rgba(184,150,46,.4);margin:0 auto 1.5rem}
 .demo-subtitle{font-size:13px;color:var(--grey);line-height:1.65;max-width:320px;margin:0 auto}
-
-/* Téléphone demo */
 #vgn-wrap{display:flex;flex-direction:column;align-items:center;background:transparent;width:100%;font-family:'Syne',sans-serif}
 #vgn-label{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;text-align:center;padding:0 8px;min-height:22px;line-height:1.4}
 .vgn-phone{width:min(260px,82vw);height:min(510px,160vw);background:#111;border-radius:36px;border:6px solid #1e1e1e;overflow:hidden;position:relative;outline:1px solid rgba(184,150,46,.2)}
@@ -206,8 +179,6 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 .dns{font-size:8px;color:#555;margin-top:2px;line-height:1.4}
 .dnti{font-size:8px;color:#333;margin-top:2px}
 .drst{background:none;border:1px solid #2a2a2a;border-radius:20px;padding:7px 14px;font-size:9px;color:#555;cursor:pointer;margin-top:auto;align-self:center;font-family:'Syne',sans-serif}
-
-/* barre de progression + nav demo */
 #vgn-pbar-w{width:min(260px,82vw);height:2px;background:rgba(0,0,0,.1);border-radius:2px;margin-top:14px;overflow:hidden}
 #vgn-pbar{height:100%;background:var(--gold);border-radius:2px;transition:width .3s linear}
 #vgn-nav{display:flex;gap:10px;margin-top:12px;align-items:center}
@@ -216,10 +187,79 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 #vgn-nav button:disabled{opacity:.25;cursor:default}
 .vgn-si{font-size:10px;color:var(--grey-light);min-width:40px;text-align:center}
 #vgn-play{background:var(--gold);color:var(--black);border:none;border-radius:20px;padding:8px 22px;font-size:11px;font-weight:700;cursor:pointer;margin-top:10px;font-family:'Syne',sans-serif}
-
-/* CTA après démo */
 .demo-cta-after{margin-top:1.5rem;text-align:center;width:100%}
 .demo-cta-wa{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;background:#25d366;color:#fff;border-radius:12px;font-weight:700;font-size:13px;text-decoration:none;animation:wa-pulse 3.5s ease-in-out infinite}
+
+/* ── PROBLÈME ─────────────────────────────── */
+.s-problem{background:var(--white)}
+.problem-lede{font-size:clamp(15px,4vw,18px);font-weight:700;line-height:1.45;color:var(--black);margin-bottom:1.1rem}
+.problem-body{font-size:14px;color:var(--grey);line-height:1.75;margin-bottom:1.5rem}
+.problem-body strong{color:var(--black)}
+.pillars{display:flex;flex-direction:column;gap:10px;margin-bottom:1.5rem}
+.pillar{display:flex;align-items:flex-start;gap:12px;padding:1rem;border-radius:12px;background:var(--white);border:1px solid var(--border)}
+.pillar-icon{font-size:19px;flex-shrink:0;margin-top:2px;width:28px;text-align:center}
+.pillar-title{font-size:13px;font-weight:700;margin-bottom:3px;color:var(--black)}
+.pillar-desc{font-size:12px;color:var(--grey);line-height:1.6}
+.problem-quote{background:var(--black);border-radius:14px;padding:1.25rem;display:flex;align-items:flex-start;gap:12px}
+.pq-mark{font-family:'Playfair Display',serif;font-size:2.8rem;line-height:.72;color:var(--gold);flex-shrink:0}
+.pq-text{font-family:'Playfair Display',serif;font-style:italic;font-size:15px;color:rgba(249,248,245,.82);line-height:1.62}
+.pq-text em{color:var(--gold-bright);font-style:normal}
+
+/* ── CE QUI EST INCLUS ────────────────────── */
+.s-included{background:var(--black);color:var(--white)}
+.incl-cards{display:flex;flex-direction:column;gap:10px;margin-top:1.5rem}
+.incl-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:1.1rem 1.1rem;display:flex;align-items:flex-start;gap:14px}
+.incl-card-icon{font-size:22px;flex-shrink:0;line-height:1;margin-top:2px}
+.incl-card-title{font-size:14px;font-weight:700;color:rgba(249,248,245,.95);margin-bottom:4px}
+.incl-card-desc{font-size:13px;color:rgba(249,248,245,.52);line-height:1.62}
+.incl-highlight{margin-top:1rem;padding:1rem 1.1rem;border-radius:12px;background:rgba(184,150,46,.1);border:1px solid rgba(184,150,46,.22);font-size:13px;color:rgba(249,248,245,.72);line-height:1.65}
+.incl-highlight strong{color:var(--gold-bright)}
+
+/* ── CALCULATEUR ──────────────────────────── */
+.s-calc{background:var(--white);padding:3.5rem 1.5rem}
+.s-calc .s-inner{max-width:520px;margin:0 auto}
+.calc-box{background:var(--white);border:1px solid var(--border);border-radius:18px;overflow:hidden;margin-top:2rem}
+.calc-fields{padding:1.5rem 1.25rem;display:flex;flex-direction:column;gap:1.5rem}
+.calc-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--grey);margin-bottom:.6rem;display:block}
+.calc-label em{color:var(--gold-dark);font-style:italic;text-transform:none;letter-spacing:0;font-size:12px;font-weight:400}
+.calc-input-wrap{position:relative}
+.calc-prefix{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--gold);pointer-events:none;z-index:1}
+.calc-suffix{position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:12px;color:var(--grey-light);pointer-events:none}
+.calc-input{width:100%;background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:13px 14px 13px 36px;font-family:'Syne',sans-serif;font-size:16px;font-weight:700;color:var(--black);outline:none;-webkit-appearance:none;appearance:none;transition:border-color .2s;-moz-appearance:textfield}
+.calc-input.no-prefix{padding-left:14px}
+.calc-input:focus{border-color:var(--gold)}
+.calc-input::placeholder{color:var(--grey-light);font-weight:400}
+.calc-input::-webkit-outer-spin-button,.calc-input::-webkit-inner-spin-button{-webkit-appearance:none}
+.calc-slider{width:100%;-webkit-appearance:none;appearance:none;height:4px;border-radius:2px;background:var(--border);outline:none;cursor:pointer;display:block;margin-top:.75rem}
+.calc-slider::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--gold-bright);cursor:pointer;border:3px solid var(--white);box-shadow:0 0 0 1px var(--gold)}
+.calc-slider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--gold-bright);cursor:pointer;border:3px solid var(--white)}
+.slider-labels{display:flex;justify-content:space-between;margin-top:8px;align-items:center}
+.slider-min,.slider-max{font-size:10px;color:var(--grey-light)}
+.slider-val{font-size:13px;font-weight:700;color:var(--gold-dark)}
+.calc-divider{height:1px;background:var(--border)}
+.calc-result{padding:1.5rem 1.25rem;background:var(--surface);border-top:1px solid var(--border)}
+.calc-placeholder{text-align:center;padding:1.5rem 1rem;color:var(--grey-light);font-size:13px;line-height:1.6}
+.calc-placeholder span{display:block;font-size:24px;margin-bottom:.5rem}
+.calc-output{display:none}
+.calc-output.show{display:block}
+.res-header{font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--grey-light);margin-bottom:1rem}
+.res-metrics{display:flex;flex-direction:column;gap:8px;margin-bottom:1rem}
+.res-metric{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1rem;border-radius:10px;background:var(--white);border:1px solid var(--border);gap:.75rem}
+.res-metric-label{font-size:12px;color:var(--grey);line-height:1.45;flex:1}
+.res-metric-label small{display:block;font-size:10px;opacity:.6;margin-top:2px}
+.res-val{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;white-space:nowrap;text-align:right}
+.res-val.rouge{color:var(--red)}
+.res-val.vert{color:var(--green)}
+.res-val.gris{color:var(--grey)}
+.roi-strip{background:var(--black);border-radius:12px;padding:1.1rem 1.1rem;margin-bottom:1rem}
+.roi-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(249,248,245,.4);margin-bottom:.25rem}
+.roi-main{font-family:'Playfair Display',serif;font-size:1.75rem;font-weight:700;color:var(--gold-bright);line-height:1}
+.roi-sub{font-size:12px;color:rgba(249,248,245,.5);margin-top:.3rem}
+.calc-cta-btn{display:flex;align-items:center;gap:12px;padding:15px 18px;background:#25d366;color:#fff;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;font-family:'Syne',sans-serif;transition:filter .15s;animation:wa-pulse 3.5s ease-in-out infinite}
+.calc-cta-btn:active{filter:brightness(.9)}
+.calc-note-txt{font-size:10px;color:var(--grey-light);text-align:center;margin-top:.75rem;line-height:1.5}
+@keyframes calcpop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.calc-animate{animation:calcpop .35s ease both}
 
 /* ── IMPACT ───────────────────────────────── */
 .s-impact{background:var(--white)}
@@ -243,34 +283,34 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 .impact-small{font-size:11px;color:var(--grey-light);margin-top:.3rem}
 
 /* ── TARIFS ───────────────────────────────── */
-.s-pricing{background:var(--surface)}
-.plans{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:1.5rem}
-.plan{border-radius:13px;padding:1.1rem .8rem;border:1px solid var(--border);background:var(--white);text-align:center;position:relative}
+.s-pricing{background:var(--black);color:var(--white)}
+.plan{border-radius:13px;padding:1.1rem .8rem;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);text-align:center;position:relative}
 .plan-star{position:absolute;top:-10px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--black);font-size:9px;font-weight:800;letter-spacing:.1em;padding:3px 10px;border-radius:99px;white-space:nowrap}
-.plan-featured{background:var(--black);border-color:var(--gold)}
-.plan-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin-bottom:.4rem}
-.plan-featured .plan-label{color:rgba(249,248,245,.38)}
-.plan-price{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--black);line-height:1}
-.plan-featured .plan-price{color:var(--gold-bright)}
-.plan-mo{font-size:11px;color:var(--grey);font-weight:600;margin-top:1px}
-.plan-featured .plan-mo{color:rgba(249,248,245,.38)}
-.plan-detail{font-size:11px;color:var(--grey-light);margin-top:.35rem}
-.plan-day{font-size:13px;font-weight:700;color:var(--gold-dark);margin-top:.4rem}
-.plan-featured .plan-detail{color:rgba(249,248,245,.28)}
-.setup-box{margin-top:1.1rem;padding:1.1rem 1.2rem;background:var(--white);border:1px solid var(--border);border-radius:13px}
-.setup-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--grey-light);margin-bottom:.5rem}
+.plan-featured{background:var(--gold);border-color:var(--gold)}
+.plan-label{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(249,248,245,.4);margin-bottom:.4rem}
+.plan-featured .plan-label{color:rgba(8,8,7,.5)}
+.plan-price{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:var(--white);line-height:1}
+.plan-featured .plan-price{color:var(--black)}
+.plan-mo{font-size:11px;color:rgba(249,248,245,.4);font-weight:600;margin-top:1px}
+.plan-featured .plan-mo{color:rgba(8,8,7,.5)}
+.plan-detail{font-size:11px;color:rgba(249,248,245,.25);margin-top:.35rem}
+.plan-day{font-size:13px;font-weight:700;color:var(--gold-bright);margin-top:.4rem}
+.plan-featured .plan-day{color:var(--black)}
+.plan-featured .plan-detail{color:rgba(8,8,7,.45)}
+.setup-box{margin-top:1.1rem;padding:1.1rem 1.2rem;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:13px}
+.setup-label{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(249,248,245,.3);margin-bottom:.5rem}
 .setup-prices{display:flex;align-items:baseline;gap:8px;margin-bottom:.4rem}
-.price-was{font-family:'Playfair Display',serif;text-decoration:line-through;color:var(--red);font-weight:700;font-size:15px}
-.price-now{font-family:'Playfair Display',serif;color:var(--black);font-weight:800;font-size:20px}
-.price-badge{background:#fce9e6;color:var(--red);font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 9px;border-radius:99px}
-.setup-note{font-size:12px;color:var(--grey-light);line-height:1.6}
-.roi-strip{margin-top:1rem;padding:1.15rem 1.1rem;background:var(--black);border-radius:13px;display:flex;align-items:flex-start;gap:1rem}
+.price-was{font-family:'Playfair Display',serif;text-decoration:line-through;color:#f87171;font-weight:700;font-size:15px}
+.price-now{font-family:'Playfair Display',serif;color:var(--white);font-weight:800;font-size:20px}
+.price-badge{background:rgba(181,52,29,.2);color:#f87171;font-size:10px;font-weight:800;letter-spacing:.08em;padding:3px 9px;border-radius:99px}
+.setup-note{font-size:12px;color:rgba(249,248,245,.25);line-height:1.6}
+.roi-strip-pricing{margin-top:1rem;padding:1.15rem 1.1rem;background:var(--black);border-radius:13px;display:flex;align-items:flex-start;gap:1rem}
 .roi-pct{font-family:'Playfair Display',serif;font-size:2.2rem;font-weight:700;color:var(--gold-bright);flex-shrink:0;line-height:1;padding-top:3px}
 .roi-text{font-size:12px;color:rgba(249,248,245,.52);line-height:1.68}
 .roi-text strong{color:rgba(249,248,245,.92)}
 
 /* ── FAQ ──────────────────────────────────── */
-.s-faq{background:var(--white)}
+.s-faq{background:var(--surface)}
 .faq-list{display:flex;flex-direction:column;gap:8px;margin-top:1.5rem}
 .faq-item{border-radius:13px;border:1px solid var(--border);background:var(--white);overflow:hidden;transition:border-color .2s,box-shadow .2s}
 .faq-item.open{border-color:var(--gold);box-shadow:0 2px 16px rgba(184,150,46,.1)}
@@ -302,14 +342,12 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 .footer-name{font-size:14px;font-weight:700;color:var(--white);margin-bottom:.3rem}
 .footer-detail{font-size:11px;color:rgba(249,248,245,.28);line-height:1.9}
 
-/* ── LEGAL FOOTER ─────────────────────────── */
+/* ── LEGAL ────────────────────────────────── */
 .legal-footer{background:#050504;padding:2rem 1.5rem}
 .legal-inner{max-width:520px;margin:0 auto}
 .legal-links{display:flex;flex-wrap:wrap;gap:1.25rem;margin-bottom:1rem}
 .legal-links a{font-size:11px;color:rgba(249,248,245,.28);text-decoration:none;letter-spacing:.04em;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:1px}
 .legal-copy{font-size:10px;color:rgba(249,248,245,.16);letter-spacing:.05em}
-
-/* ── LEGAL PAGES ──────────────────────────── */
 .legal-page{display:none;position:fixed;inset:0;background:var(--white);z-index:999;overflow-y:auto;padding:2rem 1.5rem 4rem}
 .legal-page.active{display:block}
 .legal-page-inner{max-width:520px;margin:0 auto}
@@ -367,7 +405,27 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
   </div>
 </section>
 
-  <!-- ══ DÉMO INTERACTIVE ══════════════════════ -->
+<!-- ══ PROBLÈME ══════════════════════════════ -->
+<section class="s s-problem fade-in">
+  <div class="s-inner">
+    <span class="s-tag">Le probl&#232;me</span>
+    <h2 class="s-title">Ce qui se passe<br><em style="font-style:italic;color:var(--gold)">chaque soir.</em></h2>
+    <p class="problem-lede">Un client m&#233;content repart sans rien dire. Il rentre chez lui. &#192; 23h, il ouvre Google et tape 1&#9733;.</p>
+    <p class="problem-body">Vous dormez. L'avis est en ligne. Le lendemain matin, <strong>des dizaines de personnes l'ont d&#233;j&#224; lu</strong> avant m&#234;me votre ouverture. Les 10 personnes qui ont lu son avis iront chez votre concurrent. <strong>C'est irr&#233;versible.</strong></p>
+    <p class="problem-body" style="margin-bottom:1.25rem">Notre syst&#232;me agit avant que tout &#231;a se produise, sur trois niveaux&#160;:</p>
+    <div class="pillars">
+      <div class="pillar"><div class="pillar-icon">&#128683;</div><div><div class="pillar-title">Votre filet de s&#233;curit&#233;, sur chaque table</div><div class="pillar-desc">Le client insatisfait vous contacte directement, en priv&#233;. Vous r&#233;glez le probl&#232;me en interne. Google ne voit rien.</div></div></div>
+      <div class="pillar"><div class="pillar-icon">&#11088;</div><div><div class="pillar-title">Vos satisfaits deviennent votre force de vente</div><div class="pillar-desc">Ceux qui repartent contents &#8212; et ils sont majoritaires &#8212; sont guid&#233;s vers votre fiche Google en un clic. Vos &#233;toiles montent pendant que vous travaillez.</div></div></div>
+      <div class="pillar"><div class="pillar-icon">&#128202;</div><div><div class="pillar-title">Vous pilotez, enfin</div><div class="pillar-desc">Quel serveur g&#233;n&#232;re le plus de satisfaction&#160;? Quel soir&#160;? Quel plat pose probl&#232;me&#160;? Ces donn&#233;es, aucun patron de resto ne les a. Vous, si.</div></div></div>
+    </div>
+    <div class="problem-quote">
+      <div class="pq-mark">&#8220;</div>
+      <div class="pq-text">Tout le monde r&#233;pond &#224; un mauvais avis.<br><em>Nous, on l'emp&#234;che d'exister.</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DÉMO INTERACTIVE ══════════════════════ -->
 <section class="s-demo fade-in">
   <div class="s-inner">
     <div class="demo-intro">
@@ -376,13 +434,11 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
       <div class="demo-sep"></div>
       <p class="demo-subtitle">Tapez sur les boutons pour vivre exactement ce que vit votre client depuis sa table.</p>
     </div>
-
     <div id="vgn-wrap">
       <div id="vgn-label">Le client scanne le QR code sur la table</div>
       <div class="vgn-phone">
         <div class="vgn-notch"></div>
         <div class="vgn-pscreen">
-
           <div class="vgn-sc on" id="vsc0">
             <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px">
               <div class="vgn-cambox">
@@ -390,131 +446,101 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
                 <div class="vgn-cc vbl"></div><div class="vgn-cc vbr"></div>
                 <div class="vgn-scanline"></div>
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                  <rect x="2" y="2" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
-                  <rect x="7" y="7" width="12" height="12" rx="1" fill="#C9981A"/>
-                  <rect x="36" y="2" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
-                  <rect x="41" y="7" width="12" height="12" rx="1" fill="#C9981A"/>
-                  <rect x="2" y="36" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
-                  <rect x="7" y="41" width="12" height="12" rx="1" fill="#C9981A"/>
-                  <rect x="36" y="36" width="6" height="6" fill="#C9981A"/>
-                  <rect x="44" y="36" width="6" height="6" fill="#C9981A"/>
-                  <rect x="36" y="44" width="6" height="6" fill="#C9981A"/>
-                  <rect x="52" y="44" width="6" height="6" fill="#C9981A"/>
+                  <rect x="2" y="2" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/><rect x="7" y="7" width="12" height="12" rx="1" fill="#C9981A"/>
+                  <rect x="36" y="2" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/><rect x="41" y="7" width="12" height="12" rx="1" fill="#C9981A"/>
+                  <rect x="2" y="36" width="22" height="22" rx="3" fill="#1a1a1a" stroke="#333" stroke-width="1"/><rect x="7" y="41" width="12" height="12" rx="1" fill="#C9981A"/>
+                  <rect x="36" y="36" width="6" height="6" fill="#C9981A"/><rect x="44" y="36" width="6" height="6" fill="#C9981A"/>
+                  <rect x="36" y="44" width="6" height="6" fill="#C9981A"/><rect x="52" y="44" width="6" height="6" fill="#C9981A"/>
                   <rect x="44" y="52" width="14" height="6" fill="#C9981A"/>
                 </svg>
               </div>
               <div class="vgn-hint">Pointez vers le QR code sur la table</div>
-              <button class="vgn-scanbtn" id="vbtn-scan">Scanner →</button>
+              <button class="vgn-scanbtn" id="vbtn-scan">Scanner &#8594;</button>
             </div>
           </div>
-
           <div class="vgn-sc" id="vsc1">
             <div class="vf-hero">
               <div class="vf-awn"></div><div class="vf-awnf"></div><div class="vf-wall"></div>
               <div class="vf-win" style="left:18px"></div><div class="vf-win" style="left:56px"></div>
               <div class="vf-win" style="left:94px"></div><div class="vf-win" style="left:148px"></div>
               <div class="vf-ovl"></div>
-              <div class="vf-htxt"><div class="vf-dist">Paris · Bistrot Parisien</div><div class="vf-name">Le Bistrot</div></div>
+              <div class="vf-htxt"><div class="vf-dist">Paris &#183; Bistrot Parisien</div><div class="vf-name">Le Bistrot</div></div>
             </div>
             <div class="vf-infos">
-              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">📍</span><span class="vf-itxt">12, rue de la Paix, 75001 Paris</span></div>
-              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">📞</span><span class="vf-itxt">01 XX XX XX XX</span></div>
-              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">🕐</span><span class="vf-itxt">Ouvert 7j/7 · 12h00 – 23h00</span></div>
+              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">&#128205;</span><span class="vf-itxt">12, rue de la Paix, 75001 Paris</span></div>
+              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">&#128222;</span><span class="vf-itxt">01 XX XX XX XX</span></div>
+              <div class="vf-irow"><span style="font-size:11px;color:#C9981A">&#128336;</span><span class="vf-itxt">Ouvert 7j/7 &#183; 12h00 &#8211; 23h00</span></div>
             </div>
             <div class="vf-abox">
               <div class="vf-atitle">Votre avis compte pour nous</div>
-              <div class="vf-asub">Avez-vous apprécié votre visite chez nous ?</div>
+              <div class="vf-asub">Avez-vous appr&#233;ci&#233; votre visite chez nous&#160;?</div>
               <div class="vf-btns">
-                <button class="vfbtn vfbtn-h" id="vbtn-happy"><div class="vfbtn-l"><span style="font-size:20px">😊</span><span>Oui, très satisfait !</span></div><span class="vfbtn-a">›</span></button>
-                <button class="vfbtn vfbtn-s" id="vbtn-sad"><div class="vfbtn-l"><span style="font-size:20px">😕</span><span>Pas vraiment...</span></div><span class="vfbtn-a">›</span></button>
+                <button class="vfbtn vfbtn-h" id="vbtn-happy"><div class="vfbtn-l"><span style="font-size:20px">&#128522;</span><span>Oui, tr&#232;s satisfait&#160;!</span></div><span class="vfbtn-a">&#8250;</span></button>
+                <button class="vfbtn vfbtn-s" id="vbtn-sad"><div class="vfbtn-l"><span style="font-size:20px">&#128533;</span><span>Pas vraiment...</span></div><span class="vfbtn-a">&#8250;</span></button>
               </div>
             </div>
           </div>
-
           <div class="vgn-sc" id="vsc2">
-            <div class="gm-bar"><button class="gm-back" id="vbtn-gmback">‹</button><div class="gm-title">Le Bistrot Avis</div></div>
+            <div class="gm-bar"><button class="gm-back" id="vbtn-gmback">&#8249;</button><div class="gm-title">Votre restaurant &#8212; Avis</div></div>
             <div class="gm-map"><div class="gm-r1"></div><div class="gm-r2"></div><div class="gm-g1"></div><div class="gm-g2"></div><div class="gm-pin"><div style="position:relative"><div class="gm-ph"></div><div class="gm-pd"></div></div><div class="gm-pt"></div></div></div>
             <div class="gm-card">
-              <div><div class="gm-pname">Le Bistrot</div><div class="gm-pcat">4,4 ★★★★☆ · (312 avis) · 20–30 € · Ouvert</div></div>
+              <div><div class="gm-pname">Le Bistrot</div><div class="gm-pcat">4,4 &#9733;&#9733;&#9733;&#9733;&#9734; &#183; (312 avis) &#183; 20&#8211;30&#160;&#8364; &#183; Ouvert</div></div>
               <div class="gm-div"></div>
               <div class="gm-avrow"><div class="gm-av">JD</div><div><div class="gm-un">Jean Dupont</div><div class="gm-pub">Post public sur Google</div></div></div>
-              <div class="gm-bstars"><span class="gm-bs">★</span><span class="gm-bs">★</span><span class="gm-bs">★</span><span class="gm-bs">★</span><span class="gm-bs">★</span></div>
+              <div class="gm-bstars"><span class="gm-bs">&#9733;</span><span class="gm-bs">&#9733;</span><span class="gm-bs">&#9733;</span><span class="gm-bs">&#9733;</span><span class="gm-bs">&#9733;</span></div>
               <div class="gm-cats">
-                <div class="gm-crow"><span class="gm-cl">Cuisine</span><span class="gm-cs">★★★★★</span></div>
-                <div class="gm-crow"><span class="gm-cl">Service</span><span class="gm-cs">★★★★★</span></div>
-                <div class="gm-crow"><span class="gm-cl">Ambiance</span><span class="gm-cs">★★★★★</span></div>
+                <div class="gm-crow"><span class="gm-cl">Cuisine</span><span class="gm-cs">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div class="gm-crow"><span class="gm-cl">Service</span><span class="gm-cs">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+                <div class="gm-crow"><span class="gm-cl">Ambiance</span><span class="gm-cs">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
               </div>
-              <div class="gm-ta">Super expérience, service au top !</div>
+              <div class="gm-ta">Super exp&#233;rience, service au top&#160;!</div>
               <div class="gm-acts"><button class="gm-cancel" id="vbtn-gmcancel">Annuler</button><button class="gm-pub-btn" id="vbtn-gmpub">Publier</button></div>
             </div>
           </div>
-
           <div class="vgn-sc" id="vsc3">
-            <div class="crd-hbar"><button class="crd-bk" id="vbtn-crdbk">‹</button><div class="crd-ht">Partagez votre expérience</div><div class="crd-hs">Le Bistrot · 12, rue de la Paix · Paris</div></div>
+            <div class="crd-hbar"><button class="crd-bk" id="vbtn-crdbk">&#8249;</button><div class="crd-ht">Partagez votre exp&#233;rience</div><div class="crd-hs">Le Bistrot &#183; 12, rue de la Paix &#183; Paris</div></div>
             <div class="crd-body">
-              <div class="crd-bst"><span class="crd-bs">☆</span><span class="crd-bs">☆</span><span class="crd-bs">☆</span><span class="crd-bs">☆</span><span class="crd-bs">☆</span></div>
+              <div class="crd-bst"><span class="crd-bs">&#9734;</span><span class="crd-bs">&#9734;</span><span class="crd-bs">&#9734;</span><span class="crd-bs">&#9734;</span><span class="crd-bs">&#9734;</span></div>
               <div class="crd-div"></div>
-              <div class="crd-srow"><span class="crd-sl">Cuisine</span><div class="crd-sm"><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span></div></div>
-              <div class="crd-srow"><span class="crd-sl">Service</span><div class="crd-sm"><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span></div></div>
-              <div class="crd-srow"><span class="crd-sl">Ambiance</span><div class="crd-sm"><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span></div></div>
-              <div class="crd-srow"><span class="crd-sl">Propreté</span><div class="crd-sm"><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span><span class="crd-ms">☆</span></div></div>
-              <div class="crd-taf">Partagez votre expérience concernant ce lieu</div>
+              <div class="crd-srow"><span class="crd-sl">Cuisine</span><div class="crd-sm"><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span></div></div>
+              <div class="crd-srow"><span class="crd-sl">Service</span><div class="crd-sm"><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span></div></div>
+              <div class="crd-srow"><span class="crd-sl">Ambiance</span><div class="crd-sm"><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span></div></div>
+              <div class="crd-srow"><span class="crd-sl">Propret&#233;</span><div class="crd-sm"><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span><span class="crd-ms">&#9734;</span></div></div>
+              <div class="crd-taf">Partagez votre exp&#233;rience concernant ce lieu</div>
               <div><div style="font-size:9px;color:#555;margin-bottom:4px">Votre serveur</div><div class="crd-chips"><div class="crd-chip">Serveur 1</div><div class="crd-chip">Serveur 2</div><div class="crd-chip">Serveur 3</div><div class="crd-chip">Serveur 4</div></div></div>
-              <div><div style="font-size:9px;color:#555;margin-bottom:4px">Type de repas</div><div class="crd-chips"><div class="crd-chip">Petit-déjeuner</div><div class="crd-chip">Brunch</div><div class="crd-chip sel">Dîner</div></div></div>
+              <div><div style="font-size:9px;color:#555;margin-bottom:4px">Type de repas</div><div class="crd-chips"><div class="crd-chip">D&#233;jeuner</div><div class="crd-chip">Brunch</div><div class="crd-chip sel">D&#238;ner</div></div></div>
               <button class="crd-sub" id="vbtn-crdsub">Envoyer mon retour</button>
             </div>
           </div>
-
           <div class="vgn-sc" id="vsc4">
-            <div class="dh"><div class="dh-vgn">VGN · DASHBOARD</div><div class="dh-sub">Votre restaurant — semaine en cours</div></div>
+            <div class="dh"><div class="dh-vgn">VGN &#183; DASHBOARD</div><div class="dh-sub">Votre restaurant &#8212; semaine en cours</div></div>
             <div class="db">
               <div class="dstats">
                 <div class="dstat"><div class="dsn go">+3</div><div class="dsl">avis Google</div></div>
                 <div class="dstat"><div class="dsn wh">12</div><div class="dsl">scans QR</div></div>
-                <div class="dstat"><div class="dsn re">2</div><div class="dsl">retours privés</div></div>
+                <div class="dstat"><div class="dsn re">2</div><div class="dsl">retours priv&#233;s</div></div>
               </div>
-              <div class="dnc" style="animation-delay:0s"><div class="dni wa">⚠</div><div><div class="dnt">Retour client · Dîner</div><div class="dns">"Attente trop longue…" — Service 2/5</div><div class="dnti">Il y a 4 min</div></div></div>
-              <div class="dnc" style="animation-delay:.3s"><div class="dni ok">★</div><div><div class="dnt">Nouvel avis Google · 5 étoiles</div><div class="dns">"Super expérience, service au top !"</div><div class="dnti">Il y a 18 min</div></div></div>
-              <div class="dnc" style="animation-delay:.6s"><div class="dni ok">★</div><div><div class="dnt">Nouvel avis Google · 5 étoiles</div><div class="dns">"Excellent, on reviendra !" — M. D.</div><div class="dnti">Il y a 1h</div></div></div>
-              <button class="drst" id="vbtn-rst">↩ Recommencer</button>
+              <div class="dnc" style="animation-delay:0s"><div class="dni wa">&#9888;</div><div><div class="dnt">Retour client &#183; D&#238;ner</div><div class="dns">&#171;&#160;Attente trop longue&#8230;&#160;&#187; &#8212; Service 2/5</div><div class="dnti">Il y a 4 min</div></div></div>
+              <div class="dnc" style="animation-delay:.3s"><div class="dni ok">&#9733;</div><div><div class="dnt">Nouvel avis Google &#183; 5 &#233;toiles</div><div class="dns">&#171;&#160;Super exp&#233;rience, service au top&#160;!&#160;&#187;</div><div class="dnti">Il y a 18 min</div></div></div>
+              <div class="dnc" style="animation-delay:.6s"><div class="dni ok">&#9733;</div><div><div class="dnt">Nouvel avis Google &#183; 5 &#233;toiles</div><div class="dns">&#171;&#160;Excellent, on reviendra&#160;!&#160;&#187; &#8212; M.&#160;D.</div><div class="dnti">Il y a 1h</div></div></div>
+              <button class="drst" id="vbtn-rst">&#8617; Recommencer</button>
             </div>
           </div>
-
         </div>
       </div>
       <div id="vgn-pbar-w"><div id="vgn-pbar"></div></div>
       <div id="vgn-nav">
-        <button id="vbtn-prev" disabled>‹ Préc.</button>
+        <button id="vbtn-prev" disabled>&#8249; Pr&#233;c.</button>
         <div class="vgn-si" id="vgn-info">1 / 5</div>
-        <button id="vbtn-next">Suiv. ›</button>
+        <button id="vbtn-next">Suiv. &#8250;</button>
       </div>
-      <button id="vgn-play">▶ Lecture auto</button>
+      <button id="vgn-play">&#9654; Lecture auto</button>
     </div>
-
     <div class="demo-cta-after">
       <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="demo-cta-wa">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        Je veux ça pour mon restaurant
+        Je veux &#231;a pour mon restaurant
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ PROBLÈME ══════════════════════════════ -->
-<section class="s s-problem fade-in">
-  <div class="s-inner">
-    <span class="s-tag">Le problème</span>
-    <h2 class="s-title">Ce qui se passe<br><em style="font-style:italic;color:var(--gold)">chaque soir.</em></h2>
-    <p class="problem-lede">Un client mécontent repart sans rien dire de votre établissement. Il rentre chez lui. Et à 23h, il poste 1★ sur internet.</p>
-    <p class="problem-body">Vous dormez. L'avis est en ligne. Le lendemain matin, <strong>des dizaines de personnes l'ont déjà vu</strong> avant même votre ouverture. C'est irréversible.</p>
-    <div class="pillars">
-      <div class="pillar"><div class="pillar-icon">🛑</div><div><div class="pillar-title">Avis négatifs évités</div><div class="pillar-desc">Le client insatisfait vous contacte directement, en privé. Vous recevez son retour en temps réel et pouvez agir avant que la situation prenne une autre tournure.</div></div></div>
-      <div class="pillar"><div class="pillar-icon">⭐</div><div><div class="pillar-title">Satisfaits boostés vers Google</div><div class="pillar-desc">La majorité qui repart content ne laisse rien. Notre système les guide naturellement vers un 5★.</div></div></div>
-      <div class="pillar"><div class="pillar-icon">📊</div><div><div class="pillar-title">Données privées pour vous améliorer</div><div class="pillar-desc">Chaque retour vous revient : table, serveur, plat, heure. Un outil de pilotage interne réel.</div></div></div>
-    </div>
-    <div class="problem-quote">
-      <div class="pq-mark">"</div>
-      <div class="pq-text">Tout le monde répond à un mauvais avis.<br><em>Nous, on l'empêche d'exister.</em></div>
     </div>
   </div>
 </section>
@@ -523,27 +549,95 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 <section class="s s-included fade-in">
   <div class="s-inner">
     <span class="s-tag" style="color:var(--gold)">Ce que vous obtenez</span>
-    <h2 class="s-title" style="color:var(--white)">Tout est inclus.<br><em style="color:var(--gold-bright)">Rien à faire.</em></h2>
+    <h2 class="s-title" style="color:var(--white)">Tout est inclus.<br><em style="color:var(--gold-bright)">Rien &#224; faire.</em></h2>
     <div class="incl-cards">
-      <div class="incl-card"><div class="incl-card-icon">📲</div><div><div class="incl-card-title">Un QR code sur vos tables</div><div class="incl-card-desc">Vos clients scannent, donnent leur avis en 10 secondes. Simple comme envoyer un SMS.</div></div></div>
-      <div class="incl-card"><div class="incl-card-icon">🛡️</div><div><div class="incl-card-title">Les mauvais avis restent chez vous</div><div class="incl-card-desc">Un client insatisfait vous écrit directement, en privé. Vous recevez son retour en temps réel.</div></div></div>
-      <div class="incl-card"><div class="incl-card-icon">⭐</div><div><div class="incl-card-title">Les bons avis vont sur Google</div><div class="incl-card-desc">Vos clients satisfaits sont guidés vers votre fiche Google en un clic. Vos étoiles montent.</div></div></div>
-      <div class="incl-card"><div class="incl-card-icon">📊</div><div><div class="incl-card-title">Votre rapport chaque semaine</div><div class="incl-card-desc">Scans, satisfaction, avis évités — tout est suivi, tout est clair, livré dans votre boîte mail.</div></div></div>
+      <div class="incl-card"><div class="incl-card-icon">&#128242;</div><div><div class="incl-card-title">Un QR code sur vos tables</div><div class="incl-card-desc">Vos clients scannent, donnent leur avis en 10 secondes. Simple comme envoyer un SMS.</div></div></div>
+      <div class="incl-card"><div class="incl-card-icon">&#128737;&#65039;</div><div><div class="incl-card-title">Les mauvais avis restent chez vous</div><div class="incl-card-desc">Un client insatisfait vous &#233;crit directement, en priv&#233;. Vous recevez son retour en temps r&#233;el &#8212; et vous pouvez r&#233;agir avant que la situation devienne publique.</div></div></div>
+      <div class="incl-card"><div class="incl-card-icon">&#11088;</div><div><div class="incl-card-title">Les bons avis vont sur Google</div><div class="incl-card-desc">Vos clients satisfaits sont guid&#233;s vers votre fiche Google en un clic. Vos &#233;toiles montent.</div></div></div>
+      <div class="incl-card"><div class="incl-card-icon">&#128202;</div><div><div class="incl-card-title">Votre rapport chaque semaine</div><div class="incl-card-desc">Scans, satisfaction, avis &#233;vit&#233;s &#8212; tout est suivi, tout est clair, livr&#233; directement dans votre bo&#238;te mail.</div></div></div>
     </div>
-    <div class="incl-highlight"><strong>Opérationnel en 48h.</strong> On installe tout, on teste tout. Vous n'avez rien à faire — si ce n'est encaisser les résultats.</div>
+    <div class="incl-highlight"><strong>Op&#233;rationnel en 48h.</strong> On installe tout, on teste tout. Vous n'avez rien &#224; faire &#8212; si ce n'est encaisser les r&#233;sultats.</div>
   </div>
 </section>
 
-<!-- ══ IMPACT CHIFFRÉ ═══════════════════════ -->
-<section class="s s-impact fade-in">
+<!-- ══ CALCULATEUR ROI ════════════════════════ -->
+<section class="s-calc fade-in">
   <div class="s-inner">
-    <span class="s-tag">Impact chiffré</span>
-    <h2 class="s-title">Ce que ça<br><em style="font-style:italic;color:var(--gold)">représente concrètement.</em></h2>
-    <div class="impact-note-top">Base : restaurant 100 000€/mois de CA · Source Harvard Business Review</div>
-    <div class="impact-cards">
-      <div class="impact-card"><div class="impact-card-header"><span class="impact-scenario">Scénario 1</span><span class="impact-tag tag-1">1 avis 1★ évité</span></div><div class="impact-card-body"><div class="impact-label">Un seul avis négatif évité sur internet</div><div class="impact-value v1">+1 000 à 2 000€</div><div class="impact-small">par mois, en clients récupérés</div></div></div>
-      <div class="impact-card"><div class="impact-card-header"><span class="impact-scenario">Scénario 2</span><span class="impact-tag tag-2">+0,5 étoile gagnée</span></div><div class="impact-card-body"><div class="impact-label">Note qui passe de 4,2 à 4,7 étoiles</div><div class="impact-value v2">+4 000 à 6 000€</div><div class="impact-small">par mois de CA supplémentaire</div></div></div>
-      <div class="impact-card"><div class="impact-card-header dark"><span class="impact-scenario light">Scénario 3</span><span class="impact-tag tag-3">+1 étoile gagnée</span></div><div class="impact-card-body"><div class="impact-label">Note qui passe de 3,9 à 4,9 étoiles</div><div class="impact-value v3">+9 000 à 12 000€</div><div class="impact-small">par mois — documenté, pas estimé</div></div></div>
+    <span class="s-tag">Calculez votre cas</span>
+    <h2 class="s-title" style="color:var(--black)">Combien vous co&#251;te<br><em style="color:var(--gold-dark)">l'inaction&#160;?</em></h2>
+    <p style="font-size:14px;color:var(--grey);line-height:1.72;max-width:400px">Entrez les chiffres de votre restaurant. Le calcul est bas&#233; sur les donn&#233;es Harvard Business Review &#8212; les m&#234;mes que les grandes cha&#238;nes utilisent pour piloter leur r&#233;putation.</p>
+
+    <div class="calc-box">
+      <div class="calc-fields">
+
+        <div>
+          <label class="calc-label" for="f-ca">Chiffre d'affaires mensuel <em>&#8212; estimation suffisante</em></label>
+          <div class="calc-input-wrap">
+            <span class="calc-prefix">&#8364;</span>
+            <input class="calc-input" type="number" id="f-ca" placeholder="ex : 45000" min="5000" max="500000" step="1000">
+          </div>
+        </div>
+
+        <div>
+          <label class="calc-label">Votre note Google actuelle</label>
+          <input class="calc-slider" type="range" id="f-note" min="1" max="5" step="0.1" value="4">
+          <div class="slider-labels">
+            <span class="slider-min">1 &#9733;</span>
+            <span class="slider-val" id="note-display">4,0 &#9733;</span>
+            <span class="slider-max">5 &#9733;</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="calc-label" for="f-couverts">Couverts par jour en moyenne</label>
+          <div class="calc-input-wrap">
+            <input class="calc-input no-prefix" type="number" id="f-couverts" placeholder="ex : 80" min="5" max="500" step="5">
+            <span class="calc-suffix">couverts</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="calc-divider"></div>
+
+      <div class="calc-result">
+        <div class="calc-placeholder" id="calc-ph">
+          <span>&#8595;</span>
+          Remplissez les 3 champs pour voir votre estimation personnalis&#233;e
+        </div>
+
+        <div class="calc-output" id="calc-out">
+          <div class="res-header">Votre estimation personnalis&#233;e</div>
+          <div class="res-metrics">
+            <div class="res-metric">
+              <div class="res-metric-label">Manque &#224; gagner mensuel<small>par rapport &#224; un concurrent not&#233; 4,9&#9733;</small></div>
+              <div class="res-val rouge" id="r-perte">&#8212;</div>
+            </div>
+            <div class="res-metric">
+              <div class="res-metric-label">Gain potentiel avec +0,5&#9733;<small>clients suppl&#233;mentaires attir&#233;s</small></div>
+              <div class="res-val vert" id="r-gain05">&#8212;</div>
+            </div>
+            <div class="res-metric">
+              <div class="res-metric-label">Gain potentiel avec +1&#9733;<small>impact maximal document&#233; HBR</small></div>
+              <div class="res-val vert" id="r-gain1">&#8212;</div>
+            </div>
+            <div class="res-metric">
+              <div class="res-metric-label">Co&#251;t du syst&#232;me VGN<small>abonnement semestriel tout inclus</small></div>
+              <div class="res-val gris">219 &#8364;/mois</div>
+            </div>
+          </div>
+          <div class="roi-strip">
+            <div class="roi-label">Retour sur investissement net</div>
+            <div class="roi-main" id="r-roi">&#8212;</div>
+            <div class="roi-sub" id="r-sub">&#8212;</div>
+          </div>
+          <a class="calc-cta-btn" href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20j%27ai%20fait%20le%20calcul%20sur%20votre%20site%20et%20je%20veux%20en%20savoir%20plus.">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Je veux r&#233;cup&#233;rer ces euros
+          </a>
+          <p class="calc-note-txt">Estimation bas&#233;e sur Harvard Business Review &#183; Vos donn&#233;es ne sont pas enregistr&#233;es</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -551,21 +645,22 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 <!-- ══ TARIFS ════════════════════════════════ -->
 <section class="s s-pricing fade-in">
   <div class="s-inner">
-    <span class="s-tag">Tarifs</span>
-    <h2 class="s-title">Simple.<br><em style="font-style:italic;color:var(--gold)">Transparent.</em></h2>
-    <div class="plans">
-      <div class="plan"><div class="plan-label">Mensuel</div><div class="plan-price">249</div><div class="plan-mo">€/mois</div><div class="plan-detail">Sans engagement</div></div>
-      <div class="plan plan-featured"><div class="plan-star">★ Meilleur</div><div class="plan-label">Semestriel</div><div class="plan-price">219</div><div class="plan-mo">€/mois</div><div class="plan-detail">1 314€ / 6 mois</div><div class="plan-day">7€ / jour</div></div>
-      <div class="plan"><div class="plan-label">Annuel</div><div class="plan-price">199</div><div class="plan-mo">€/mois</div><div class="plan-detail">2 388€/an</div></div>
+    <span class="s-tag" style="color:var(--gold)">Tarifs</span>
+    <h2 class="s-title" style="color:var(--white)">Simple.<br><em style="color:var(--gold-bright)">Transparent.</em></h2>
+    <p style="font-size:13px;color:rgba(249,248,245,.45);line-height:1.7;margin-bottom:1.5rem">Un restaurateur sur deux qui nous contacte nous dit la m&#234;me chose en fin d'appel&#160;: <em style="color:rgba(249,248,245,.7)">&#171;&#160;J'aurais d&#251; le faire il y a 6 mois.&#160;&#187;</em> Les avis n&#233;gatifs accumul&#233;s pendant cette p&#233;riode ne disparaissent pas.</p>
+    <div class="plans" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:1.5rem">
+      <div class="plan"><div class="plan-label">Mensuel</div><div class="plan-price">249</div><div class="plan-mo">&#8364;/mois</div><div class="plan-detail">Sans engagement</div></div>
+      <div class="plan plan-featured"><div class="plan-star">&#9733; Meilleur</div><div class="plan-label">Semestriel</div><div class="plan-price">219</div><div class="plan-mo">&#8364;/mois</div><div class="plan-detail">1&#160;314&#8364; / 6 mois</div><div class="plan-day">7&#8364; / jour</div></div>
+      <div class="plan"><div class="plan-label">Annuel</div><div class="plan-price">199</div><div class="plan-mo">&#8364;/mois</div><div class="plan-detail">2&#160;388&#8364;/an</div></div>
     </div>
     <div class="setup-box">
-      <div class="setup-label">Frais de mise en place — une seule fois</div>
-      <div class="setup-prices"><span class="price-was">800€</span><span class="price-now">350€</span><span class="price-badge">−56%</span></div>
-      <div class="setup-note">Valeur de déploiement estimée : 800€ · Jamais reconduit · Paiement par carte ou virement</div>
+      <div class="setup-label">Frais de mise en place &#8212; une seule fois</div>
+      <div class="setup-prices"><span class="price-was">800&#8364;</span><span class="price-now">350&#8364;</span><span class="price-badge">&#8722;56&#160;%</span></div>
+      <div class="setup-note">Valeur de d&#233;ploiement estim&#233;e&#160;: 800&#8364; &#183; Jamais reconduit &#183; Paiement par carte ou virement</div>
     </div>
-    <div class="roi-strip">
-      <div class="roi-pct">×10</div>
-      <div class="roi-text"><strong>Un seul avis évité rembourse ×10 le coût mensuel.</strong> 219€/mois, c'est moins qu'un repas offert par erreur — et bien moins que ce que coûte une mauvaise note. Le système s'autofinance dès la première utilisation. <strong>Ne pas l'avoir, c'est le vrai risque.</strong></div>
+    <div class="roi-strip-pricing">
+      <div class="roi-pct">&#215;10</div>
+      <div class="roi-text">Un d&#238;ner rat&#233; offert &#224; un client vous co&#251;te 80&#8364;. Un mois de notre syst&#232;me vous co&#251;te 219&#8364;. Mais ce d&#238;ner offert ne remonte pas votre note Google. Notre syst&#232;me, si. <strong>Le vrai co&#251;t, c'est l'inaction.</strong></div>
     </div>
   </div>
 </section>
@@ -573,13 +668,20 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 <!-- ══ FAQ ═══════════════════════════════════ -->
 <section class="s s-faq fade-in">
   <div class="s-inner">
-    <span class="s-tag">On vous répond</span>
+    <span class="s-tag">On vous r&#233;pond</span>
     <h2 class="s-title">Tout ce que vous<br><em style="font-style:italic;color:var(--gold)">voulez savoir.</em></h2>
     <div class="faq-list">
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>J'ai déjà quelqu'un qui s'occupe de mes avis Google.</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Il y a une différence importante entre <strong>répondre à un avis déjà publié</strong> et l'intercepter avant qu'il existe.</p><p>Répondre à un 1★ en ligne, c'est du rattrapage. Notre système agit en amont : le client insatisfait vous contacte directement, en privé, avant d'aller ailleurs.</p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Est-ce que c'est simple à mettre en place pour moi ?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Vous n'avez rien à faire. On s'occupe de tout en 48h : configuration, tests, mise en ligne, QR code prêt à poser sur vos tables.</p><p>Une fois en place, le système fonctionne seul. <strong>Votre seule action : poser le QR code.</strong></p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Est-ce une démarche légale et éthique ?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Oui, entièrement. Nous ne supprimons aucun avis et ne bloquons rien. Le client reste libre de publier où il veut.</p><p>Le client donne son consentement explicite (RGPD) avant de soumettre son retour. <strong>C'est de l'écoute client, pas de la censure.</strong></p></div></div>
-      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Comment est-ce que je vois que le système produit des résultats ?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Chaque semaine, vous recevez un rapport avec vos chiffres réels : nombre de scans, taux de satisfaction, avis évités.</p><p>Et si dans les 60 premiers jours vous n'observez aucun résultat, <strong>on se reparle et on trouve une solution ensemble — le risque est pour moi, pas pour vous.</strong></p></div></div>
+
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>J'ai d&#233;j&#224; quelqu'un qui s'occupe de mes avis Google.</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Il y a une diff&#233;rence importante entre <strong>r&#233;pondre &#224; un avis d&#233;j&#224; publi&#233;</strong> et l'intercepter avant qu'il existe. R&#233;pondre &#224; un 1&#9733; en ligne, c'est du rattrapage. Notre syst&#232;me agit en amont&#160;: le client insatisfait vous contacte directement, en priv&#233;, avant d'aller ailleurs. Ce ne sont pas les m&#234;mes outils, ni le m&#234;me moment d'action.</p></div></div>
+
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Est-ce que mes clients vont vraiment scanner le QR code&#160;?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Oui &#8212; et bien plus que vous ne le pensez. Les gens adorent donner leur avis, surtout quand c'est simple et rapide. Ce qu'ils n'aiment pas, c'est aller chercher votre fiche Google tout seuls. Notre syst&#232;me met le bon lien au bon moment. <strong>Le taux de scan de nos clients actuels d&#233;passe syst&#233;matiquement 30&#160;% des additions.</strong></p></div></div>
+
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Est-ce que c'est simple &#224; mettre en place pour moi&#160;?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Vous n'avez rien &#224; faire. On s'occupe de tout en 48h&#160;: configuration, tests, mise en ligne, QR code pr&#234;t &#224; poser sur vos tables. Pas d'interface &#224; g&#233;rer, pas d'application &#224; apprendre. <strong>Votre seule action&#160;: poser le QR code.</strong></p></div></div>
+
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Est-ce une d&#233;marche l&#233;gale et &#233;thique&#160;?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Oui, enti&#232;rement. Nous ne supprimons aucun avis et ne bloquons rien. Le client reste libre de publier o&#249; il veut. Il donne son consentement explicite (RGPD) avant de soumettre son retour. <strong>C'est de l'&#233;coute client, pas de la censure.</strong></p></div></div>
+
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span>Comment est-ce que je vois que le syst&#232;me produit des r&#233;sultats&#160;?</span><div class="faq-q-icon"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div></button><div class="faq-a"><p>Chaque semaine, vous recevez un rapport avec vos chiffres r&#233;els&#160;: nombre de scans, taux de satisfaction, avis &#233;vit&#233;s. Vous voyez exactement ce que le syst&#232;me fait pour vous. Et si dans les 60 premiers jours vous n'observez aucun r&#233;sultat, <strong>on se reparle et on trouve une solution ensemble &#8212; le risque est pour moi, pas pour vous.</strong></p></div></div>
+
     </div>
   </div>
 </section>
@@ -587,15 +689,15 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 <!-- ══ CONTACT ════════════════════════════════ -->
 <section class="s s-contact fade-in">
   <div class="s-inner">
-    <span class="s-tag" style="color:var(--gold)">Démarrer</span>
+    <span class="s-tag" style="color:var(--gold)">D&#233;marrer</span>
     <h2 class="s-title" style="color:var(--white)">Une conversation.<br><em style="color:var(--gold-bright)">Pas un engagement.</em></h2>
-    <div class="urgency-bar"><div class="urgency-icon">⏱</div><div class="urgency-text">Ce soir, il y a peut-être un client mécontent qui rentre chez lui. <strong>Il ouvre Google. Vous dormez.</strong> L'avis sera en ligne avant votre ouverture demain.</div></div>
-    <p class="contact-intro">Pas de démo automatique. Pas de formulaire. <strong>Juste un échange direct</strong> pour voir si ça a du sens pour votre établissement.</p>
+    <div class="urgency-bar"><div class="urgency-icon">&#9201;</div><div class="urgency-text">Ce soir, il y a peut-&#234;tre un client m&#233;content qui rentre chez lui. <strong>Il ouvre Google. Vous dormez.</strong> L'avis sera en ligne avant votre ouverture demain.</div></div>
+    <p class="contact-intro">La plupart des restaurateurs avec qui je parle me disent la m&#234;me chose en fin d'appel&#160;: <em>&#171;&#160;Je pensais que c'&#233;tait compliqu&#233;.&#160;&#187;</em><br><br><strong>Ce n'est pas compliqu&#233;.</strong> C'est une conversation de 15 minutes. Je vous explique comment &#231;a marche concr&#232;tement pour votre &#233;tablissement, combien &#231;a vous rapporte en th&#233;orie, et si &#231;a a du sens pour vous.<br><br>Envoyez-moi un message maintenant. Je r&#233;ponds personnellement.</p>
     <div class="contact-btns">
-      <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="c-btn-wa"><div class="c-btn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></div><div><span class="c-btn-label">WhatsApp — Nicolas</span><span class="c-btn-sub">06 46 72 36 97 · Réponse rapide</span></div></a>
+      <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="c-btn-wa"><div class="c-btn-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></div><div><span class="c-btn-label">WhatsApp &#8212; Nicolas</span><span class="c-btn-sub">06 46 72 36 97 &#183; R&#233;ponse rapide</span></div></a>
       <a href="mailto:contact@vgncompany.com?subject=Gestionnaire%20d%27Avis%20IA%20%E2%80%94%20Je%20suis%20int%C3%A9ress%C3%A9" class="c-btn-mail"><div class="c-btn-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div><div><span class="c-btn-label">Email</span><span class="c-btn-sub">contact@vgncompany.com</span></div></a>
     </div>
-    <div class="footer-id"><div class="footer-name">Nicolas Anquetin — VGN Company</div><div class="footer-detail">Déjà déployé dans la restauration parisienne<br>Opérationnel en 48h · Conformité RGPD garantie</div></div>
+    <div class="footer-id"><div class="footer-name">Nicolas Anquetin &#8212; VGN Company</div><div class="footer-detail">D&#233;j&#224; d&#233;ploy&#233; dans la restauration parisienne<br>Op&#233;rationnel en 48h &#183; Conformit&#233; RGPD garantie</div></div>
   </div>
 </section>
 
@@ -603,106 +705,125 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 <div class="legal-footer">
   <div class="legal-inner">
     <div class="legal-links">
-      <a href="#" onclick="showLegal('cgu');return false">Conditions Générales d'Utilisation</a>
-      <a href="#" onclick="showLegal('legal');return false">Mentions Légales</a>
+      <a href="#" onclick="showLegal('cgu');return false">Conditions G&#233;n&#233;rales d'Utilisation</a>
+      <a href="#" onclick="showLegal('legal');return false">Mentions L&#233;gales</a>
     </div>
-    <div class="legal-copy">© 2025 VGN Company — Nicolas Anquetin. Tous droits réservés.</div>
+    <div class="legal-copy">&#169; 2025 VGN Company &#8212; Nicolas Anquetin. Tous droits r&#233;serv&#233;s.</div>
   </div>
 </div>
 
 <!-- ══ LEGAL PAGES ════════════════════════════ -->
-<div class="legal-page" id="page-cgu"><div class="legal-page-inner"><button class="legal-back" onclick="hideLegal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Retour</button><h1>Conditions Générales d'Utilisation</h1><h2>Objet</h2><p>Les présentes CGU régissent l'accès et l'utilisation du site vitrine de VGN Company, édité par Nicolas Anquetin.</p><h2>Propriété intellectuelle</h2><p>L'ensemble des éléments du site est la propriété exclusive de Nicolas Anquetin — VGN Company. Toute reproduction sans autorisation écrite est interdite.</p><h2>Droit applicable</h2><p>Les présentes CGU sont soumises au droit français. Tout litige relève des tribunaux compétents du ressort de Versailles.</p><h2>Contact</h2><p><a href="mailto:contact@vgncompany.com">contact@vgncompany.com</a></p></div></div>
+<div class="legal-page" id="page-cgu"><div class="legal-page-inner"><button class="legal-back" onclick="hideLegal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Retour</button><h1>Conditions G&#233;n&#233;rales d'Utilisation</h1><h2>Objet</h2><p>Les pr&#233;sentes CGU r&#233;gissent l'acc&#232;s et l'utilisation du site vitrine de VGN Company, &#233;dit&#233; par Nicolas Anquetin.</p><h2>Propri&#233;t&#233; intellectuelle</h2><p>L'ensemble des &#233;l&#233;ments du site est la propri&#233;t&#233; exclusive de Nicolas Anquetin &#8212; VGN Company. Toute reproduction sans autorisation &#233;crite est interdite.</p><h2>Droit applicable</h2><p>Les pr&#233;sentes CGU sont soumises au droit fran&#231;ais. Tout litige rel&#232;ve des tribunaux comp&#233;tents du ressort de Versailles.</p><h2>Contact</h2><p><a href="mailto:contact@vgncompany.com">contact@vgncompany.com</a></p></div></div>
 
-<div class="legal-page" id="page-legal"><div class="legal-page-inner"><button class="legal-back" onclick="hideLegal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Retour</button><h1>Mentions Légales</h1><h2>Éditeur</h2><p>Nicolas Anquetin — VGN Company<br>SIRET : 921 060 737 · RCS Versailles<br>Email : <a href="mailto:contact@vgncompany.com">contact@vgncompany.com</a><br>Téléphone : 06 46 72 36 97</p><h2>Propriété intellectuelle</h2><p>L'ensemble du contenu de ce site est protégé par le droit d'auteur. Toute reproduction sans autorisation écrite préalable est interdite.</p><h2>Droit applicable</h2><p>Tout litige relève de la juridiction du tribunal de commerce de Versailles.</p></div></div>
+<div class="legal-page" id="page-legal"><div class="legal-page-inner"><button class="legal-back" onclick="hideLegal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Retour</button><h1>Mentions L&#233;gales</h1><h2>&#201;diteur</h2><p>Nicolas Anquetin &#8212; VGN Company<br>SIRET&#160;: 921&#160;060&#160;737 &#183; RCS Versailles<br>Email&#160;: <a href="mailto:contact@vgncompany.com">contact@vgncompany.com</a><br>T&#233;l&#233;phone&#160;: 06 46 72 36 97</p><h2>Propri&#233;t&#233; intellectuelle</h2><p>L'ensemble du contenu de ce site est prot&#233;g&#233; par le droit d'auteur. Toute reproduction sans autorisation &#233;crite pr&#233;alable est interdite.</p><h2>Droit applicable</h2><p>Tout litige rel&#232;ve de la juridiction du tribunal de commerce de Versailles.</p></div></div>
 
 <!-- ══ STICKY CTA ═════════════════════════════ -->
 <div class="sticky-cta" id="sticky">
-  <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="sticky-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp</a>
+  <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="sticky-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp &#8212; r&#233;ponse en 1h</a>
   <a href="mailto:contact@vgncompany.com" class="sticky-mail"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email</a>
 </div>
 
 <script>
-// Scroll fade-in
-const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') });
-}, { threshold: .12 });
-document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+// Fade-in
+var obs = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el)});
 
 // Sticky CTA
-const sticky = document.getElementById('sticky');
-const heroObs = new IntersectionObserver(entries => {
-  sticky.classList.toggle('show', !entries[0].isIntersecting);
-}, { threshold: .1 });
+var sticky = document.getElementById('sticky');
+var heroObs = new IntersectionObserver(function(entries){sticky.classList.toggle('show',!entries[0].isIntersecting)},{threshold:.1});
 heroObs.observe(document.querySelector('.hero'));
 
 // Legal
-function showLegal(id) {
-  document.querySelectorAll('.legal-page').forEach(p => p.classList.remove('active'));
-  const page = document.getElementById('page-' + id);
-  page.classList.add('active');
-  page.scrollTop = 0;
-  document.body.style.overflow = 'hidden';
-}
-function hideLegal() {
-  document.querySelectorAll('.legal-page').forEach(p => p.classList.remove('active'));
-  document.body.style.overflow = '';
-}
+function showLegal(id){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active')});var page=document.getElementById('page-'+id);page.classList.add('active');page.scrollTop=0;document.body.style.overflow='hidden'}
+function hideLegal(){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active')});document.body.style.overflow=''}
 
 // FAQ
-function toggleFaq(btn) {
-  const item = btn.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
+function toggleFaq(btn){var item=btn.closest('.faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open')});if(!isOpen)item.classList.add('open')}
 
-// Démo interactive
-(function() {
-  var scenes = [
-    { id:'vsc0', label:'Le client scanne le QR code sur la table' },
-    { id:'vsc1', label:'Il choisit sa réponse — satisfait ou non ?' },
-    { id:'vsc2', label:'Satisfait → redirigé vers Google Maps 5 étoiles' },
-    { id:'vsc3', label:'Insatisfait → formulaire privé (jamais publié sur Google)' },
-    { id:'vsc4', label:'Vous recevez les alertes en temps réel' }
+// D\u00e9mo interactive
+(function(){
+  var scenes=[
+    {id:'vsc0',label:'Le client scanne le QR code sur la table'},
+    {id:'vsc1',label:'Il choisit sa r\u00e9ponse \u2014 satisfait ou non\u00a0?'},
+    {id:'vsc2',label:'Satisfait \u2192 redirig\u00e9 vers Google Maps 5 \u00e9toiles'},
+    {id:'vsc3',label:'Insatisfait \u2192 formulaire priv\u00e9 (jamais publi\u00e9 sur Google)'},
+    {id:'vsc4',label:'Vous recevez les alertes en temps r\u00e9el'}
   ];
-  var cur = 0, playing = false, iv = null;
-  var lbl = document.getElementById('vgn-label');
-  var info = document.getElementById('vgn-info');
-  var bar = document.getElementById('vgn-pbar');
-  var bPrev = document.getElementById('vbtn-prev');
-  var bNext = document.getElementById('vbtn-next');
-  var bPlay = document.getElementById('vgn-play');
-
-  function goTo(i) {
-    document.getElementById(scenes[cur].id).classList.remove('on');
-    cur = Math.max(0, Math.min(scenes.length - 1, i));
-    document.getElementById(scenes[cur].id).classList.add('on');
-    lbl.textContent = scenes[cur].label;
-    info.textContent = (cur + 1) + ' / ' + scenes.length;
-    bar.style.width = ((cur + 1) / scenes.length * 100) + '%';
-    bPrev.disabled = cur === 0;
-    bNext.disabled = cur === scenes.length - 1;
-  }
-  function stopPlay() { playing = false; clearInterval(iv); bPlay.textContent = '▶ Lecture auto'; }
-
-  document.getElementById('vbtn-scan').addEventListener('click', function() { goTo(1); });
-  document.getElementById('vbtn-happy').addEventListener('click', function() { goTo(2); });
-  document.getElementById('vbtn-sad').addEventListener('click', function() { goTo(3); });
-  document.getElementById('vbtn-gmback').addEventListener('click', function() { goTo(1); });
-  document.getElementById('vbtn-gmcancel').addEventListener('click', function() { goTo(1); });
-  document.getElementById('vbtn-gmpub').addEventListener('click', function() { goTo(4); });
-  document.getElementById('vbtn-crdbk').addEventListener('click', function() { goTo(1); });
-  document.getElementById('vbtn-crdsub').addEventListener('click', function() { goTo(4); });
-  document.getElementById('vbtn-rst').addEventListener('click', function() { goTo(0); });
-  bPrev.addEventListener('click', function() { stopPlay(); goTo(cur - 1); });
-  bNext.addEventListener('click', function() { stopPlay(); goTo(cur + 1); });
-  bPlay.addEventListener('click', function() {
-    if (playing) { stopPlay(); return; }
-    playing = true; bPlay.textContent = '⏸ Pause';
-    if (cur === scenes.length - 1) goTo(0);
-    iv = setInterval(function() { cur < scenes.length - 1 ? goTo(cur + 1) : stopPlay(); }, 3200);
-  });
+  var cur=0,playing=false,iv=null;
+  var lbl=document.getElementById('vgn-label');
+  var info=document.getElementById('vgn-info');
+  var bar=document.getElementById('vgn-pbar');
+  var bPrev=document.getElementById('vbtn-prev');
+  var bNext=document.getElementById('vbtn-next');
+  var bPlay=document.getElementById('vgn-play');
+  function goTo(i){document.getElementById(scenes[cur].id).classList.remove('on');cur=Math.max(0,Math.min(scenes.length-1,i));document.getElementById(scenes[cur].id).classList.add('on');lbl.textContent=scenes[cur].label;info.textContent=(cur+1)+' / '+scenes.length;bar.style.width=((cur+1)/scenes.length*100)+'%';bPrev.disabled=cur===0;bNext.disabled=cur===scenes.length-1}
+  function stopPlay(){playing=false;clearInterval(iv);bPlay.textContent='\u25b6 Lecture auto'}
+  document.getElementById('vbtn-scan').addEventListener('click',function(){goTo(1)});
+  document.getElementById('vbtn-happy').addEventListener('click',function(){goTo(2)});
+  document.getElementById('vbtn-sad').addEventListener('click',function(){goTo(3)});
+  document.getElementById('vbtn-gmback').addEventListener('click',function(){goTo(1)});
+  document.getElementById('vbtn-gmcancel').addEventListener('click',function(){goTo(1)});
+  document.getElementById('vbtn-gmpub').addEventListener('click',function(){goTo(4)});
+  document.getElementById('vbtn-crdbk').addEventListener('click',function(){goTo(1)});
+  document.getElementById('vbtn-crdsub').addEventListener('click',function(){goTo(4)});
+  document.getElementById('vbtn-rst').addEventListener('click',function(){goTo(0)});
+  bPrev.addEventListener('click',function(){stopPlay();goTo(cur-1)});
+  bNext.addEventListener('click',function(){stopPlay();goTo(cur+1)});
+  bPlay.addEventListener('click',function(){if(playing){stopPlay();return}playing=true;bPlay.textContent='\u23f8 Pause';if(cur===scenes.length-1)goTo(0);iv=setInterval(function(){cur<scenes.length-1?goTo(cur+1):stopPlay()},3200)});
   goTo(0);
+})();
+
+// Calculateur ROI
+(function(){
+  var ca=document.getElementById('f-ca');
+  var note=document.getElementById('f-note');
+  var couverts=document.getElementById('f-couverts');
+  var noteDisp=document.getElementById('note-display');
+  var ph=document.getElementById('calc-ph');
+  var out=document.getElementById('calc-out');
+
+  function fmt(n){return new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n)}
+
+  note.addEventListener('input',function(){
+    noteDisp.textContent=parseFloat(this.value).toFixed(1).replace('.',',')+' \u2605';
+    calc();
+  });
+  ca.addEventListener('input',calc);
+  couverts.addEventListener('input',calc);
+
+  function calc(){
+    var caVal=parseFloat(ca.value)||0;
+    var noteVal=parseFloat(note.value);
+    var couvertsVal=parseFloat(couverts.value)||0;
+    if(caVal<5000||couvertsVal<5){ph.style.display='block';out.classList.remove('show');return}
+
+    var ticketMoyen=Math.round(caVal/(couvertsVal*30));
+    var ecart=Math.max(0,4.9-noteVal);
+    var perte=Math.round(caVal*ecart*0.085);
+    var gain05=Math.round(caVal*0.04);
+    var gain1=Math.round(caVal*0.085);
+    var gainCouverts05=Math.round(couvertsVal*0.02*ticketMoyen*30);
+    var gainTotal05=Math.round((gain05+gainCouverts05)/2);
+    var cout=219;
+    var roiNet=gainTotal05-cout;
+    var multiple=Math.max(1,Math.round(gain1/cout));
+
+    document.getElementById('r-perte').textContent='\u2212'+fmt(perte);
+    document.getElementById('r-gain05').textContent='+'+fmt(gainTotal05);
+    document.getElementById('r-gain1').textContent='+'+fmt(gain1);
+
+    if(roiNet>0){
+      document.getElementById('r-roi').textContent='+'+fmt(roiNet)+' net/mois';
+      document.getElementById('r-sub').textContent='Soit \u00d7'+multiple+' votre investissement \u2014 d\u00e8s le premier mois';
+    } else {
+      document.getElementById('r-roi').textContent='ROI positif d\u00e8s +0,3\u2605';
+      document.getElementById('r-sub').textContent='Votre note est d\u00e9j\u00e0 haute \u2014 chaque avis \u00e9vit\u00e9 prot\u00e8ge votre CA';
+    }
+
+    ph.style.display='none';
+    out.classList.add('show','calc-animate');
+    setTimeout(function(){out.classList.remove('calc-animate')},400);
+  }
 })();
 </script>
 </body>
