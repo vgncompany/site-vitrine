@@ -367,6 +367,37 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 .sticky-cta.show{transform:translateY(0)}
 .sticky-wa{flex:2;display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;border-radius:10px;padding:13px 10px;font-size:13px;font-weight:700;text-decoration:none;-webkit-tap-highlight-color:transparent;animation:wa-pulse 3.5s ease-in-out infinite}
 .sticky-mail{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:rgba(255,255,255,.08);color:rgba(249,248,245,.68);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:13px 10px;font-size:12px;font-weight:600;text-decoration:none;-webkit-tap-highlight-color:transparent}
+/* ── FORMULAIRE NUMÉRO ───────────────────── */
+.lead-box{margin-top:1rem;padding:1.1rem;background:rgba(184,150,46,.07);border:1px solid rgba(184,150,46,.22);border-radius:12px}
+.lead-box-title{font-size:13px;font-weight:700;color:var(--black);margin-bottom:.25rem}
+.lead-box-sub{font-size:11px;color:var(--grey);margin-bottom:.75rem;line-height:1.5}
+.lead-row{display:flex;gap:8px}
+.lead-input{flex:1;background:var(--white);border:1.5px solid var(--border);border-radius:10px;padding:12px 14px;font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:var(--black);outline:none;-webkit-appearance:none;transition:border-color .2s}
+.lead-input:focus{border-color:var(--gold)}
+.lead-input::placeholder{color:var(--grey-light);font-weight:400;font-size:13px}
+.lead-btn{background:#25d366;color:#fff;border:none;border-radius:10px;padding:12px 16px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;transition:filter .15s,transform .15s}
+.lead-btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.lead-btn:active{filter:brightness(.9);transform:scale(.97)}
+.lead-sent{display:none;text-align:center;padding:.75rem;font-size:13px;color:var(--green);font-weight:700}
+.lead-rgpd{font-size:10px;color:var(--grey-light);margin-top:.5rem;line-height:1.5}
+
+/* ── POPUP SORTIE ────────────────────────── */
+.exit-popup{display:none;position:fixed;inset:0;background:rgba(8,8,7,.75);z-index:500;align-items:flex-end;justify-content:center;padding:1rem}
+.exit-popup.show{display:flex;animation:fadeup .35s ease both}
+@keyframes fadeup{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.exit-card{background:var(--white);border-radius:20px;padding:1.75rem 1.5rem;width:100%;max-width:480px;position:relative}
+.exit-close{position:absolute;top:.75rem;right:1rem;background:none;border:none;font-size:24px;color:var(--grey-light);cursor:pointer;line-height:1;padding:4px}
+.exit-emoji{font-size:36px;margin-bottom:.75rem;display:block;text-align:center}
+.exit-title{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--black);text-align:center;margin-bottom:.4rem;line-height:1.2}
+.exit-sub{font-size:13px;color:var(--grey);text-align:center;line-height:1.65;margin-bottom:1.25rem}
+.exit-wa{display:flex;align-items:center;justify-content:center;gap:10px;padding:16px;background:#25d366;color:#fff;border-radius:12px;font-weight:700;font-size:14px;text-decoration:none;transition:filter .15s,transform .15s}
+.exit-wa:hover{filter:brightness(1.08);transform:translateY(-2px)}
+.exit-dismiss{display:block;text-align:center;margin-top:.75rem;font-size:12px;color:var(--grey-light);cursor:pointer}
+
+/* ── ANIMATIONS BOUTONS ──────────────────── */
+.cta-wa,.c-btn-wa,.calc-cta-btn,.demo-cta-wa,.sticky-wa{transition:transform .15s,filter .15s}
+.cta-wa:hover,.c-btn-wa:hover,.calc-cta-btn:hover,.demo-cta-wa:hover,.sticky-wa:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.cta-wa:active,.c-btn-wa:active,.calc-cta-btn:active,.demo-cta-wa:active,.sticky-wa:active{transform:scale(.97)}
 </style>
 </head>
 <body>
@@ -635,6 +666,16 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
             <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
             Je veux r&#233;cup&#233;rer ces euros
           </a>
+          <div class="lead-box" id="lead-box">
+  <div class="lead-box-title">📞 Vous voulez qu'on regarde ça ensemble ?</div>
+  <div class="lead-box-sub">Laissez votre numéro — je vous rappelle dans les 15 minutes.</div>
+  <div class="lead-row">
+    <input class="lead-input" type="tel" id="lead-tel" placeholder="06 XX XX XX XX" maxlength="14">
+    <button class="lead-btn" id="lead-submit">Appeler →</button>
+  </div>
+  <div class="lead-sent" id="lead-sent">✓ Reçu — je vous rappelle dans 15 minutes !</div>
+  <p class="lead-rgpd">En soumettant, vous acceptez d'être contacté par VGN Company. Aucune inscription, aucun spam.</p>
+</div>
           <p class="calc-note-txt">Estimation bas&#233;e sur Harvard Business Review &#183; Vos donn&#233;es ne sont pas enregistr&#233;es</p>
         </div>
       </div>
@@ -717,6 +758,20 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 
 <div class="legal-page" id="page-legal"><div class="legal-page-inner"><button class="legal-back" onclick="hideLegal()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Retour</button><h1>Mentions L&#233;gales</h1><h2>&#201;diteur</h2><p>Nicolas Anquetin &#8212; VGN Company<br>SIRET&#160;: 921&#160;060&#160;737 &#183; RCS Versailles<br>Email&#160;: <a href="mailto:contact@vgncompany.com">contact@vgncompany.com</a><br>T&#233;l&#233;phone&#160;: 06 46 72 36 97</p><h2>Propri&#233;t&#233; intellectuelle</h2><p>L'ensemble du contenu de ce site est prot&#233;g&#233; par le droit d'auteur. Toute reproduction sans autorisation &#233;crite pr&#233;alable est interdite.</p><h2>Droit applicable</h2><p>Tout litige rel&#232;ve de la juridiction du tribunal de commerce de Versailles.</p></div></div>
 
+  <div class="exit-popup" id="exit-popup">
+  <div class="exit-card">
+    <button class="exit-close" id="exit-close">×</button>
+    <span class="exit-emoji">🚨</span>
+    <div class="exit-title">Avant de partir…</div>
+    <div class="exit-sub">Ce soir, un client mécontent de votre restaurant va peut-être poster 1★ sur Google. <strong>En ce moment, vous n'avez aucun système pour l'intercepter.</strong></div>
+    <a class="exit-wa" id="exit-wa-btn" href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20j%27ai%20visit%C3%A9%20votre%20site%20et%20je%20veux%20en%20savoir%20plus%20sur%20le%20gestionnaire%20d%27avis.">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Parler à Nicolas sur WhatsApp
+    </a>
+    <span class="exit-dismiss" id="exit-dismiss">Non merci, je pars sans système de protection</span>
+  </div>
+</div>
+  
 <!-- ══ STICKY CTA ═════════════════════════════ -->
 <div class="sticky-cta" id="sticky">
   <a href="https://wa.me/33646723697?text=Bonjour%20Nicolas%2C%20je%20veux%20en%20savoir%20plus%20sur%20le%20Gestionnaire%20d%27Avis%20IA." class="sticky-wa"><svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.862L.057 23.62a.5.5 0 0 0 .62.62l5.785-1.483A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.66-.524-5.17-1.434L3.5 21.5l.946-3.302A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>WhatsApp &#8212; r&#233;ponse en 1h</a>
@@ -724,40 +779,52 @@ body{font-family:'Syne',sans-serif;background:var(--white);color:var(--black);li
 </div>
 
 <script>
-// Fade-in
-var obs = new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.12});
-document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el)});
+var WEBHOOK = 'https://nicolasanquetin.app.n8n.cloud/webhook/1715b815-0635-4016-a1b2-e647818c580b';
+var sessionId = Date.now() + '-' + Math.random().toString(36).substr(2,6);
+var startTime = Date.now();
+var calcData = {ca:0, note:4, couverts:0, roi:0};
 
-// Sticky CTA
-var sticky = document.getElementById('sticky');
-var heroObs = new IntersectionObserver(function(entries){sticky.classList.toggle('show',!entries[0].isIntersecting)},{threshold:.1});
-heroObs.observe(document.querySelector('.hero'));
+function track(type, data) {
+  var payload = Object.assign({ type:type, session:sessionId, ts:new Date().toISOString(), url:location.href }, data||{});
+  try { navigator.sendBeacon(WEBHOOK, JSON.stringify(payload)); } catch(e) {}
+}
 
-// Legal
-function showLegal(id){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active')});var page=document.getElementById('page-'+id);page.classList.add('active');page.scrollTop=0;document.body.style.overflow='hidden'}
-function hideLegal(){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active')});document.body.style.overflow=''}
+track('page_view', { referrer: document.referrer || 'direct' });
+window.addEventListener('beforeunload', function() {
+  track('session_end', { duree_sec: Math.round((Date.now()-startTime)/1000) });
+});
 
-// FAQ
-function toggleFaq(btn){var item=btn.closest('.faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open')});if(!isOpen)item.classList.add('open')}
+var scrollMarks = {25:false,50:false,75:false,100:false};
+window.addEventListener('scroll', function() {
+  var pct = Math.round((window.scrollY/(document.body.scrollHeight-window.innerHeight))*100);
+  [25,50,75,100].forEach(function(m){ if(!scrollMarks[m]&&pct>=m){scrollMarks[m]=true;track('scroll_depth',{pct:m});} });
+},{passive:true});
 
-// D\u00e9mo interactive
+document.querySelectorAll('a[href*="wa.me"]').forEach(function(el) {
+  el.addEventListener('click', function() {
+    var section = el.closest('section') ? el.closest('section').className.split(' ')[0] : (el.closest('.sticky-cta')?'sticky':el.closest('.exit-popup')?'exit_popup':'unknown');
+    track('clic_whatsapp', {section:section});
+  });
+});
+
+document.querySelectorAll('a[href^="mailto"]').forEach(function(el) {
+  el.addEventListener('click', function(){ track('clic_email'); });
+});
+
+var demoScenes=['scan','accueil','satisfait_google','insatisfait_form','dashboard'];
 (function(){
   var scenes=[
     {id:'vsc0',label:'Le client scanne le QR code sur la table'},
-    {id:'vsc1',label:'Il choisit sa r\u00e9ponse \u2014 satisfait ou non\u00a0?'},
-    {id:'vsc2',label:'Satisfait \u2192 redirig\u00e9 vers Google Maps 5 \u00e9toiles'},
-    {id:'vsc3',label:'Insatisfait \u2192 formulaire priv\u00e9 (jamais publi\u00e9 sur Google)'},
-    {id:'vsc4',label:'Vous recevez les alertes en temps r\u00e9el'}
+    {id:'vsc1',label:'Il choisit sa réponse — satisfait ou non ?'},
+    {id:'vsc2',label:'Satisfait → redirigé vers Google Maps 5 étoiles'},
+    {id:'vsc3',label:'Insatisfait → formulaire privé (jamais publié sur Google)'},
+    {id:'vsc4',label:'Vous recevez les alertes en temps réel'}
   ];
   var cur=0,playing=false,iv=null;
-  var lbl=document.getElementById('vgn-label');
-  var info=document.getElementById('vgn-info');
-  var bar=document.getElementById('vgn-pbar');
-  var bPrev=document.getElementById('vbtn-prev');
-  var bNext=document.getElementById('vbtn-next');
-  var bPlay=document.getElementById('vgn-play');
-  function goTo(i){document.getElementById(scenes[cur].id).classList.remove('on');cur=Math.max(0,Math.min(scenes.length-1,i));document.getElementById(scenes[cur].id).classList.add('on');lbl.textContent=scenes[cur].label;info.textContent=(cur+1)+' / '+scenes.length;bar.style.width=((cur+1)/scenes.length*100)+'%';bPrev.disabled=cur===0;bNext.disabled=cur===scenes.length-1}
-  function stopPlay(){playing=false;clearInterval(iv);bPlay.textContent='\u25b6 Lecture auto'}
+  var lbl=document.getElementById('vgn-label'),info=document.getElementById('vgn-info'),bar=document.getElementById('vgn-pbar');
+  var bPrev=document.getElementById('vbtn-prev'),bNext=document.getElementById('vbtn-next'),bPlay=document.getElementById('vgn-play');
+  function goTo(i){document.getElementById(scenes[cur].id).classList.remove('on');cur=Math.max(0,Math.min(scenes.length-1,i));document.getElementById(scenes[cur].id).classList.add('on');lbl.textContent=scenes[cur].label;info.textContent=(cur+1)+' / '+scenes.length;bar.style.width=((cur+1)/scenes.length*100)+'%';bPrev.disabled=cur===0;bNext.disabled=cur===scenes.length-1;track('demo_ecran',{ecran:cur,nom:demoScenes[cur]});}
+  function stopPlay(){playing=false;clearInterval(iv);bPlay.textContent='▶ Lecture auto';}
   document.getElementById('vbtn-scan').addEventListener('click',function(){goTo(1)});
   document.getElementById('vbtn-happy').addEventListener('click',function(){goTo(2)});
   document.getElementById('vbtn-sad').addEventListener('click',function(){goTo(3)});
@@ -769,62 +836,69 @@ function toggleFaq(btn){var item=btn.closest('.faq-item');var isOpen=item.classL
   document.getElementById('vbtn-rst').addEventListener('click',function(){goTo(0)});
   bPrev.addEventListener('click',function(){stopPlay();goTo(cur-1)});
   bNext.addEventListener('click',function(){stopPlay();goTo(cur+1)});
-  bPlay.addEventListener('click',function(){if(playing){stopPlay();return}playing=true;bPlay.textContent='\u23f8 Pause';if(cur===scenes.length-1)goTo(0);iv=setInterval(function(){cur<scenes.length-1?goTo(cur+1):stopPlay()},3200)});
+  bPlay.addEventListener('click',function(){if(playing){stopPlay();return;}playing=true;bPlay.textContent='⏸ Pause';track('demo_lecture_auto',{});if(cur===scenes.length-1)goTo(0);iv=setInterval(function(){cur<scenes.length-1?goTo(cur+1):stopPlay();},3200);});
   goTo(0);
 })();
 
-// Calculateur ROI
 (function(){
-  var ca=document.getElementById('f-ca');
-  var note=document.getElementById('f-note');
-  var couverts=document.getElementById('f-couverts');
-  var noteDisp=document.getElementById('note-display');
-  var ph=document.getElementById('calc-ph');
-  var out=document.getElementById('calc-out');
-
-  function fmt(n){return new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n)}
-
-  note.addEventListener('input',function(){
-    noteDisp.textContent=parseFloat(this.value).toFixed(1).replace('.',',')+' \u2605';
-    calc();
-  });
-  ca.addEventListener('input',calc);
-  couverts.addEventListener('input',calc);
-
+  var ca=document.getElementById('f-ca'),note=document.getElementById('f-note'),couverts=document.getElementById('f-couverts');
+  var noteDisp=document.getElementById('note-display'),ph=document.getElementById('calc-ph'),out=document.getElementById('calc-out');
+  var calcWaBtn=document.getElementById('calc-wa-btn'),champsRemplis=0;
+  function fmt(n){return new Intl.NumberFormat('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);}
+  note.addEventListener('input',function(){calcData.note=parseFloat(this.value);noteDisp.textContent=parseFloat(this.value).toFixed(1).replace('.',',')+' ★';calc();});
+  ca.addEventListener('input',function(){calcData.ca=parseFloat(this.value)||0;trackChamp();calc();});
+  couverts.addEventListener('input',function(){calcData.couverts=parseFloat(this.value)||0;trackChamp();calc();});
+  function trackChamp(){var n=0;if(calcData.ca>0)n++;if(calcData.couverts>0)n++;if(n>champsRemplis){champsRemplis=n;track('calculateur_champ',{champs_remplis:champsRemplis});}}
   function calc(){
-    var caVal=parseFloat(ca.value)||0;
-    var noteVal=parseFloat(note.value);
-    var couvertsVal=parseFloat(couverts.value)||0;
-    if(caVal<5000||couvertsVal<5){ph.style.display='block';out.classList.remove('show');return}
-
+    var caVal=calcData.ca,noteVal=calcData.note,couvertsVal=calcData.couverts;
+    if(caVal<5000||couvertsVal<5){ph.style.display='block';out.classList.remove('show');return;}
     var ticketMoyen=Math.round(caVal/(couvertsVal*30));
     var ecart=Math.max(0,4.9-noteVal);
     var perte=Math.round(caVal*ecart*0.085);
-    var gain05=Math.round(caVal*0.04);
-    var gain1=Math.round(caVal*0.085);
+    var gain05=Math.round(caVal*0.04),gain1=Math.round(caVal*0.085);
     var gainCouverts05=Math.round(couvertsVal*0.02*ticketMoyen*30);
     var gainTotal05=Math.round((gain05+gainCouverts05)/2);
-    var cout=219;
-    var roiNet=gainTotal05-cout;
-    var multiple=Math.max(1,Math.round(gain1/cout));
-
-    document.getElementById('r-perte').textContent='\u2212'+fmt(perte);
+    var roiNet=gainTotal05-219,multiple=Math.max(1,Math.round(gain1/219));
+    calcData.roi=roiNet;
+    document.getElementById('r-perte').textContent='−'+fmt(perte);
     document.getElementById('r-gain05').textContent='+'+fmt(gainTotal05);
     document.getElementById('r-gain1').textContent='+'+fmt(gain1);
-
-    if(roiNet>0){
-      document.getElementById('r-roi').textContent='+'+fmt(roiNet)+' net/mois';
-      document.getElementById('r-sub').textContent='Soit \u00d7'+multiple+' votre investissement \u2014 d\u00e8s le premier mois';
-    } else {
-      document.getElementById('r-roi').textContent='ROI positif d\u00e8s +0,3\u2605';
-      document.getElementById('r-sub').textContent='Votre note est d\u00e9j\u00e0 haute \u2014 chaque avis \u00e9vit\u00e9 prot\u00e8ge votre CA';
-    }
-
-    ph.style.display='none';
-    out.classList.add('show','calc-animate');
-    setTimeout(function(){out.classList.remove('calc-animate')},400);
+    if(roiNet>0){document.getElementById('r-roi').textContent='+'+fmt(roiNet)+' net/mois';document.getElementById('r-sub').textContent='Soit ×'+multiple+' votre investissement — dès le premier mois';}
+    else{document.getElementById('r-roi').textContent='ROI positif dès +0,3★';document.getElementById('r-sub').textContent='Votre note est déjà haute — chaque avis évité protège votre CA';}
+    ph.style.display='none';out.classList.add('show','calc-animate');setTimeout(function(){out.classList.remove('calc-animate');},400);
+    var msg='Bonjour Nicolas, j\'ai calculé sur votre site que je perds environ '+fmt(perte)+'/mois avec ma note de '+noteVal.toFixed(1)+'★. Mon restaurant fait '+fmt(caVal)+'/mois de CA. Je veux en savoir plus.';
+    if(calcWaBtn)calcWaBtn.href='https://wa.me/33646723697?text='+encodeURIComponent(msg);
+    track('calculateur_complet',{ca:caVal,note:noteVal,couverts:couvertsVal,perte:perte,roi:roiNet});
   }
 })();
+
+document.getElementById('lead-submit').addEventListener('click',function(){
+  var tel=document.getElementById('lead-tel').value.trim();
+  if(!tel||tel.length<8){document.getElementById('lead-tel').focus();return;}
+  var msg='Bonjour Nicolas, j\'ai laissé mon numéro sur votre site. CA: '+(calcData.ca?calcData.ca+'€':'non renseigné')+' | Note: '+calcData.note.toFixed(1)+'★ | ROI estimé: '+calcData.roi+'€/mois';
+  track('lead_telephone',{tel:tel,ca:calcData.ca,note:calcData.note,roi:calcData.roi});
+  document.querySelector('.lead-row').style.display='none';
+  document.getElementById('lead-sent').style.display='block';
+  setTimeout(function(){window.open('https://wa.me/33646723697?text='+encodeURIComponent(msg),'_blank');},800);
+});
+
+var exitShown=false,exitPopup=document.getElementById('exit-popup');
+function showExit(){if(exitShown)return;exitShown=true;exitPopup.classList.add('show');track('exit_popup_affiche',{});}
+var inactivityTimer=setTimeout(showExit,45000);
+['touchstart','scroll','click'].forEach(function(e){document.addEventListener(e,function(){clearTimeout(inactivityTimer);inactivityTimer=setTimeout(showExit,45000);},{passive:true});});
+document.addEventListener('mouseleave',function(e){if(e.clientY<10)showExit();});
+document.getElementById('exit-close').addEventListener('click',function(){exitPopup.classList.remove('show');track('exit_popup_ferme',{});});
+document.getElementById('exit-dismiss').addEventListener('click',function(){exitPopup.classList.remove('show');track('exit_popup_ignore',{});});
+document.getElementById('exit-wa-btn').addEventListener('click',function(){track('exit_popup_clic_wa',{});});
+
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+var sticky=document.getElementById('sticky');
+var heroObs=new IntersectionObserver(function(entries){sticky.classList.toggle('show',!entries[0].isIntersecting);},{threshold:.1});
+heroObs.observe(document.querySelector('.hero'));
+function showLegal(id){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active');});var page=document.getElementById('page-'+id);page.classList.add('active');page.scrollTop=0;document.body.style.overflow='hidden';}
+function hideLegal(){document.querySelectorAll('.legal-page').forEach(function(p){p.classList.remove('active');});document.body.style.overflow='';}
+function toggleFaq(btn){var item=btn.closest('.faq-item');var isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(i){i.classList.remove('open');});if(!isOpen)item.classList.add('open');}
 </script>
 </body>
 </html>
