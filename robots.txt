@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://avistars.fr/sitemap.xml
+
+# Host
+Host: https://avistars.fr
